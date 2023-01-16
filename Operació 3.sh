@@ -4,7 +4,6 @@ read -p "Introduce un dia: " dia
 read -p "Introduce un mes: " mes
 usuario=`cat usuarios.txt | grep $dia | grep $mes | awk '{ print $1 }'`
 
-
 if [ $usuario = `` ]
 then
 echo "========================="

@@ -3,7 +3,6 @@
 read -p "Introduce un mes del año: " mes
 diasmes=`cat usuarios.txt | grep $mes | awk '{ print $2 }'`
 
-
 if [ $diasmes = `` ]
 then
 echo "========================="
